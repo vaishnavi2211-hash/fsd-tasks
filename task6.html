@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Task-6</title>
+    <style>
+        body {
+            background: #222;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+        }
+
+        .page {
+            width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border: 6px solid #fff;
+            box-shadow: 0 0 0 3px #ddd;
+            padding: 12px;
+        }
+
+        .top-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 8px;
+            align-items: stretch;
+        }
+
+        .top-grid>div {
+            border: 1px solid #bfbfbf;
+            height: 80px;
+            background: #fff;
+        }
+
+        .top-center {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 6px;
+        }
+
+        .top-center>div {
+            border: 1px solid #bfbfbf;
+            height: 20px;
+            background: #fff;
+        }
+
+        .green-bar {
+            margin: 12px 0;
+            background: #697f3f;
+            height: 36px;
+            border: 1px solid #6a7f3f;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            gap: 12px;
+            align-items: start;
+            border: 1px solid transparent;
+            padding: 6px 0;
+        }
+
+        .side {
+            border: 1px solid #cfcfcf;
+            background: #fff;
+            min-height: 300px;
+        }
+
+        .center-wrap {
+            border: 1px solid #cfcfcf;
+            background: #fafafa;
+            padding: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+
+        .pic-frame {
+            background: #fff;
+            border: 6px solid #e6e6e6;
+            padding: 6px;
+            width: 80%;
+            max-width: 540px;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .pic-frame img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .blue-bar {
+            margin-top: 12px;
+            background: #2f3f5a;
+            height: 28px;
+            border: 1px solid #2b3a57;
+        }
+
+        @media (max-width: 960px) {
+            .page {
+                width: 96%;
+            }
+
+            .top-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .center-wrap {
+                min-height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="top-grid">
+            <div class="top-left"></div>
+            <div class="top-center">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="top-right"></div>
+        </div>
+        <div class="green-bar"></div>
+        <div class="main-grid">
+            <div class="side"></div>
+            <div class="center-wrap">
+                <div class="pic-frame">
+                    <img alt="center image" src="https://files.prokerala.com/downloads/pics/800/prabhas-52548.jpg">
+                </div>
+            </div>
+            <div class="side"></div>
+        </div>
+        <div class="blue-bar"></div>
+    </div>
+</body>
+</html>

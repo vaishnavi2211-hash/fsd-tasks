@@ -10,7 +10,7 @@ const data = [
     { id: 103, name: "vaishu" },
     { id: 104, name: "krishna" }
 ];
-const targetId =104;
+const targetId = 104;
 const result = data.filter(item => item.id === targetId);
 console.log("3. Object with ID 104:", result[0]);
 const values = [90, 89, 56, 45];

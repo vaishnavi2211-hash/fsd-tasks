@@ -1,0 +1,24 @@
+
+let str1 = ' gfuh ieiuei ';
+let firstFive = str1.trim().slice(0, 5);
+console.log("1. First 5 letters:", firstFive); 
+let str2 = 'hduej dij';
+let lengthOfStr2 = str2.length;
+let upperStr2 = str2.toUpperCase();
+console.log("2. Length:", lengthOfStr2); 
+console.log("   Uppercase:", upperStr2); 
+let str3 = ' biji jdo ';
+let cleanedStr3 = str3.toLowerCase().trim();
+console.log("3. Lowercased & trimmed:", cleanedStr3); 
+let originalStr = 'hello world';
+let replacedStr = originalStr.replace('world', 'JavaScript');
+console.log("4. Replaced string:", replacedStr); 
+console.log("5. Implicit Coercion Examples:");
+console.log(89 + 'hello' + 90 / 9);     
+console.log('10' - 5 + true);           
+console.log(false + '123');            
+console.log('5' * '2');                
+console.log(null + 1);                 
+console.log(undefined + 1);            
+console.log(true + false);          
+console.log('10' + 5 + 1);             
